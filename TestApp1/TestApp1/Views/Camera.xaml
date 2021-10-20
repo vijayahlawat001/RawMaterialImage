@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp1.Views.Camera"
+             Title="Camera Access"    
+             BackgroundColor="Gray">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Camera Access In Xamarin forms"/>
+                <Button Text="Take a Photo"    
+                    x:Name="takePhoto"    
+                    BackgroundColor="Fuchsia"    
+                    />
+                <Button Text="Pick a Photo"    
+                    x:Name="pickPhoto"    
+                    BackgroundColor="Blue"    
+                    />
+                <Button Text="Take A Video"    
+                    x:Name="takeVideo"    
+                    BackgroundColor="Gray"    
+                    />
+                <Button Text="Pick A Video"    
+                    x:Name="pickVideo"    
+                    BackgroundColor="Green"    
+                    />
+                <Image x:Name="image"/>
+                <Button Text="Upload to Server"    
+                    x:Name="UploadServer"    
+                    BackgroundColor="Khaki"    
+                    />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+    

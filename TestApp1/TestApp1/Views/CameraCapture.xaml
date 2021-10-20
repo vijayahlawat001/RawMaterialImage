@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TestApp1.ViewModel"
+             x:Class="TestApp1.Views.CameraCapture"
+             Title="Image Capture" >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Picker Title="Project Name" x:Name="pickerProject" SelectedIndexChanged="pickerProject_SelectedIndexChanged" />
+                <Picker Title="Assembly Name" x:Name="pickerAssemblyName" SelectedIndexChanged="pickerAssemblyName_SelectedIndexChanged" />
+                <Picker Title="Unit Name" x:Name="pickerUnitName"/>
+                <Button Text="Capture Image" x:Name="btnStartCamera"></Button>
+                <Image x:Name="image"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
